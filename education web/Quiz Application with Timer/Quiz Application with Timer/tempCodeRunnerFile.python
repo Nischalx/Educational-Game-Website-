@@ -1,0 +1,24 @@
+import math
+
+# Define the function
+def f(x):
+    return x*math.exp(x) - 2*x
+
+# Define the derivative of the function
+def df(x):
+    return math.exp(x)*(x+1) - 2
+
+# Define the Newton-Raphson method
+def newton_raphson(x):
+    epsilon = 0.0001
+    while abs(f(x)) > epsilon:
+        x = x - f(x)/df(x)
+    return round(x, 4)
+
+# Initial root
+x0 = 1
+
+# Call the Newton-Raphson method
+root = newton_raphson(x0)
+print("The root of the equation is:", root)
+

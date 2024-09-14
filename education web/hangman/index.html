@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Hangman</title>
+  <style>  
+  .nav{
+    background-color: blueviolet;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#home{
+            height: 50px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .home{
+            font-size: medium;
+        }
+
+</style>
+</head>
+<body>
+  <div class="nav">
+    <h1>Educational Games Website</h1>
+    <button type="button" id="home" class="btn btn-outline-warning" ><h1 class="home">Home</h1></button>
+    <a id="target0" href="C:\Users\anuvr\OneDrive\Desktop\education web\index.html"></a>
+</div>
+
+<div class="container">
+  <h1 class="text-center">Hangman</h1>
+  <div class="float-right">Wrong Guesses: <span id='mistakes'>0</span> of <span id='maxWrong'></span></div>
+  <div class="text-center">
+    <img id='hangmanPic' src="./images/0.jpg" alt="">
+    <p>Guess the Programming Language:</p>
+    <p id="wordSpotlight">The word to be guessed goes here</p>
+    <div id="keyboard"></div>
+    <button class="btn btn-info" onClick="reset()">Reset</button>
+  </div> 
+</div>
+
+<script src='./js/hangman.js'></script>
+</body>
+<script>
+   
+  document.getElementById('home').addEventListener('click', function() {
+    document.getElementById('target0').click();
+  });
+</script>
+</html>

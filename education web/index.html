@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GROUP - 4</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        body{
+            background-color: black;
+        }
+        .navbar{
+            background-color: blueviolet;                         
+            display: flex;
+            justify-content: space-evenly;
+            height: 100x;
+            margin-top: 0;
+        }
+        .content{
+            background-color: silver;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10%;
+            height: 300px;
+        }
+        button{
+            margin-right: 50px;
+            background-color: brown;
+            color: blanchedalmond;
+            height: 100px;
+            width: 150px;
+            font-size: 150%;
+            border-radius: 10px;
+        }
+        button:hover {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            
+        }
+        
+        #home{
+            height: 50px;
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+        }
+        .home{
+            font-size: medium;
+        }
+        .animate{
+            margin-top: 50px;
+            animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+        }
+        @keyframes slidein {
+  0% {
+    margin-left: 10%;
+  }
+  50% {
+    margin-left: 90%;
+  }
+  100% {
+    margin-left: 10%;
+  }
+}
+    </style>
+</head>
+<body>
+    
+    <div class="navbar">
+        <h1>Educational Games Website</h1>
+        <button type="button" id="home" class="btn btn-outline-warning" ><h1 class="home">Home</h1></button>
+        <a id="target0" href="C:\Users\anuvr\OneDrive\Desktop\education web\index.html"></a>
+    </div>
+    
+<h1 class="animated infinite bounce delay-2s animate" ><img src="C:\Users\anuvr\OneDrive\Desktop\education web\th.jpg"></h1>
+    <div class="content">
+        <button id="hangman">Hangman</button>
+        <a id="target" href="C:\Users\anuvr\OneDrive\Desktop\education web\hangman\index.html"></a>
+        <button id="quiz">Quiz</button>
+        <a id="target1" href="C:\Users\anuvr\OneDrive\Desktop\education web\Quiz Application with Timer\Quiz Application with Timer\index.html"></a>
+        <button id="scramble">Word Sramble</button>
+        <a id="target2" href="C:\Users\anuvr\OneDrive\Desktop\education web\Word Scramble Game\Word Scramble Game\index.html"></a>
+        <button id="guess">Guess the Word</button>
+        <a id="target3" href="C:\Users\anuvr\OneDrive\Desktop\education web\Word Guessing Game\Word Guessing Game\index.html"></a>
+    </div>
+
+</body>
+<script>
+    document.getElementById('hangman').addEventListener('click', function() {
+      document.getElementById('target').click();
+    });
+    document.getElementById('quiz').addEventListener('click', function() {
+      document.getElementById('target1').click();
+    });
+    document.getElementById('scramble').addEventListener('click', function() {
+      document.getElementById('target2').click();
+    });
+    document.getElementById('guess').addEventListener('click', function() {
+      document.getElementById('target3').click();
+    });
+    document.getElementById('home').addEventListener('click', function() {
+      document.getElementById('target0').click();
+    });
+  </script>
+</html>
